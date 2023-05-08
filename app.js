@@ -1,5 +1,6 @@
-/*Reminder: objects are form using [] */
+/*Reminder: objects are form using {} */
 
+/*The best practice is to use object literal to create objects */
 const myObject = {
     property: 'Value!',
     otherProperty: 77,
@@ -8,4 +9,10 @@ const myObject = {
    }
   }
 
-  console.log("hello")
+  console.log("hello");
+
+  /*to get information you can use dot notation and bracket notation. */
+
+  console.log(myObject.property);
+
+  console.log(myObject["otherProperty"]);
