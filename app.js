@@ -61,3 +61,18 @@ const player1 = new Player('steve', 'X')
 const player2 = new Player('also steve', 'O')
 player1.sayName() // logs 'steve'
 player2.sayName() // logs 'also steve'
+
+/*EXERCISE */
+
+function Book (title, author, pages ,read,) {
+  this.title = title
+  this.author = author
+  this.pages = pages
+  this.read = read
+  this.info = function() {
+    return `${title} by ${author}, ${pages} pages, read: ${read}`
+  }
+}
+
+const test = new Book('a', 'b', 20, 'yes')
+console.log(test.info())
