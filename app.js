@@ -76,3 +76,8 @@ function Book (title, author, pages ,read,) {
 
 const test = new Book('a', 'b', 20, 'yes')
 console.log(test.info())
+
+/*PROTOTYPES*/
+/*Before we go much further, there’s something important you need to understand about JavaScript objects. All objects in JavaScript have a prototype. 
+Stated simply, the prototype is another object that the original object inherits from, 
+which is to say, the original object has access to all of its prototype’s methods and properties.*/
