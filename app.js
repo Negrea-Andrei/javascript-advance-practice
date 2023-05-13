@@ -98,3 +98,9 @@ Player.prototype.sayHello = function() {
   /*when an object calls .sayHello it will consol log "Hello, I'm a player"*/
 
   /*Object.getPrototypeOf() vs. .proto vs. [[Prototype]]*/
+
+/*Use Object.getPrototypeOf() not .proto vs. [[Prototype]]*/
+/*.proto vs. [[Prototype]] is an old way o get the prototype*/
+
+
+/*Prototypal Inheritance*/
