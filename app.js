@@ -96,3 +96,5 @@ Player.prototype.sayHello = function() {
   console.log("Hello, I'm a player!");
 } /*=> the prototype stores a function*/
   /*when an object calls .sayHello it will consol log "Hello, I'm a player"*/
+
+  /*Object.getPrototypeOf() vs. .proto vs. [[Prototype]]*/
