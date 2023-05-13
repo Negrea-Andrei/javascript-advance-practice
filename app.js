@@ -81,3 +81,18 @@ console.log(test.info())
 /*Before we go much further, there’s something important you need to understand about JavaScript objects. All objects in JavaScript have a prototype. 
 Stated simply, the prototype is another object that the original object inherits from, 
 which is to say, the original object has access to all of its prototype’s methods and properties.*/
+
+/*1)All objects in JavaScript have a prototype*/
+/*2)Prototype is another object*/
+/*3)The original object has access to all of its prototype’s methods and properties*/
+
+/*Accessing an object’s prototype*/
+/*Object.getPrototypeOf() => returns the prototype of the object*/
+/*.prototype => contains the methods and properties of the object constructor prototype*/
+Object.getPrototypeOf(player1) === Player.prototype /* => true */
+Object.getPrototypeOf(player2) === Player.prototype /* => true */
+
+Player.prototype.sayHello = function() {
+  console.log("Hello, I'm a player!");
+} /*=> the prototype stores a function*/
+  /*when an object calls .sayHello it will consol log "Hello, I'm a player"*/
