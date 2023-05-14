@@ -104,3 +104,12 @@ Player.prototype.sayHello = function() {
 
 
 /*Prototypal Inheritance*/
+console.log(Object.getPrototypeOf(Player.prototype) === Object.prototype) /*=> return true*/
+console.log(player1.valueOf()) /*=>returns Player object and all the proprieties of player1*/
+
+/*.prototype.hasOwnProperty*/
+
+Object.prototype.hasOwnProperty('hasOwnProperty'); /*=> return true*/
+/*because prototype.hasOwnProperty returns true if the property is a direct property of the object 
+— even if the value is null or undefined. 
+The method returns false if the property is inherited, or has not been declared at all.*/
