@@ -18,3 +18,4 @@ const personFactory = (name, age) => {
   };
   
   const jen = new Person('jen', 27);
+  //Note that factory functions do not utilize the prototype, which does come with a performance penalty.
