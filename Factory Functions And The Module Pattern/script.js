@@ -39,3 +39,14 @@ console.log(name, color, number, food); // Maynard red 34 rice
 console.log({ name, color, number, food });
  // { name: 'Maynard', color: 'red', number: 34, food: 'rice' }
  //Scope and Closure
+ //Example
+ let a = 17;
+
+const func = x => {
+  let a = x;
+};
+
+func(99);
+
+console.log(a); //=> this will log 17. The reason is that the function does not update the a variable but creates a new variable inside the function that cant be accessed from
+                //outside the function sooo it will refer again to the first 'a' variable
