@@ -9,3 +9,12 @@ const personFactory = (name, age) => {
   console.log(jeff.name); // 'jeff'
   
   jeff.sayHello(); // calls the function and logs 'hello!'
+
+  /*Compare to a object constructor*/
+  const Person = function(name, age) {
+    this.sayHello = () => console.log('hello!');
+    this.name = name;
+    this.age = age;
+  };
+  
+  const jen = new Person('jen', 27);
