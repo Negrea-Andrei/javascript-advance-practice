@@ -50,3 +50,5 @@ func(99);
 
 console.log(a); //=> this will log 17. The reason is that the function does not update the a variable but creates a new variable inside the function that cant be accessed from
                 //outside the function sooo it will refer again to the first 'a' variable
+
+//Wednesday 24/05/2023 was not home
