@@ -52,3 +52,5 @@ console.log(a); //=> this will log 17. The reason is that the function does not 
                 //outside the function sooo it will refer again to the first 'a' variable
 
 //Wednesday 24/05/2023 was not home
+
+//Private Variables and Functions
