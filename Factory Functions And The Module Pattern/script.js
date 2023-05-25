@@ -61,3 +61,10 @@ const FactoryFunction = string => {
 };
 
 const taco = FactoryFunction('taco');
+
+//taco.printString => ----TACO---- because if i try to call taco.capitalizeString its going to give an error because that function are not returned
+/*The reason is that the FactoryFunction does not return anything. 
+It defines the capitalizeString and printString functions within its scope, but it does not explicitly return them or make them accessible outside of the function.
+
+Since the FactoryFunction does not return anything, assigning the result to taco will result in taco being undefined. 
+Therefore, attempting to call console.log(taco) or taco.printString would result in an error, as taco does not have any properties or methods.*/
