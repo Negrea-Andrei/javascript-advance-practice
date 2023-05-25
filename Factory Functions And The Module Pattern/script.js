@@ -68,3 +68,5 @@ It defines the capitalizeString and printString functions within its scope, but 
 
 Since the FactoryFunction does not return anything, assigning the result to taco will result in taco being undefined. 
 Therefore, attempting to call console.log(taco) or taco.printString would result in an error, as taco does not have any properties or methods.*/
+
+//CLOSURE
