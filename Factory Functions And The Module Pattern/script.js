@@ -54,3 +54,10 @@ console.log(a); //=> this will log 17. The reason is that the function does not 
 //Wednesday 24/05/2023 was not home
 
 //Private Variables and Functions
+const FactoryFunction = string => {
+  const capitalizeString = () => string.toUpperCase();
+  const printString = () => console.log(`----${capitalizeString()}----`);
+  return { printString };
+};
+
+const taco = FactoryFunction('taco');
