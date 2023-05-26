@@ -87,3 +87,6 @@ counter(); // 0
 counter(); // 1
 counter(); // 2
 counter(); // 3
+
+//Private functions are functions that are used in the workings of our objects that are not intended to be used elsewhere in our program. 
+//In other words, even though our objects might only do one or two things, we are free to split our functions up as much as we want and only export the functions that the rest of the program is going to use.
