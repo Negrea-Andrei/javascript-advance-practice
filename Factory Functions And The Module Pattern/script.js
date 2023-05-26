@@ -70,3 +70,6 @@ Since the FactoryFunction does not return anything, assigning the result to taco
 Therefore, attempting to call console.log(taco) or taco.printString would result in an error, as taco does not have any properties or methods.*/
 
 //CLOSURE
+//The concept of closure is the idea that functions retain their scope even if they are passed around and called outside of that scope. 
+//In this case, printString has access to everything inside of FactoryFunction, even if it gets called outside of that function.
+
