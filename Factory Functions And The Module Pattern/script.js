@@ -121,3 +121,24 @@ const Player = (name, level) => {
 const jimmie = Player('jim', 10);
 const badGuy = Player('jeff', 5);
 jimmie.attack(badGuy);
+
+//Inheritance with factories
+
+//Object destructuring assignment is a syntax in JavaScript that allows you to extract properties from an object and assign them to variables in a more concise and convenient way. 
+//It provides a convenient method to extract multiple values from an object and bind them to variables with the same names as the object's properties.
+const Person1 = (name) => {
+  const sayName = () => console.log(`my name is ${name}`);
+  return {sayName};
+}
+
+const Nerd = (name) => {
+  // simply create a person and pull out the sayName function with destructuring assignment syntax!
+  const {sayName} = Person(name);//create a const named sayName and it gives the properties of the sayName object from Person(name)
+  const doSomethingNerdy = () => console.log('nerd stuff');
+  return {sayName, doSomethingNerdy};
+}
+
+const jeffery = Nerd('jeff');
+
+jeff.sayName(); // my name is jeff
+jeff.doSomethingNerdy(); // nerd stuff
