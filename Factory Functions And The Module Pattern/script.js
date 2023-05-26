@@ -73,3 +73,17 @@ Therefore, attempting to call console.log(taco) or taco.printString would result
 //The concept of closure is the idea that functions retain their scope even if they are passed around and called outside of that scope. 
 //In this case, printString has access to everything inside of FactoryFunction, even if it gets called outside of that function.
 
+const counterCreator = () => {
+  let count = 0;
+  return () => {
+    console.log(count);
+    count++;
+  };
+};
+
+const counter = counterCreator();
+
+counter(); // 0
+counter(); // 1
+counter(); // 2
+counter(); // 3
