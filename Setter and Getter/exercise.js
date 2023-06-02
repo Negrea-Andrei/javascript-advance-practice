@@ -12,3 +12,15 @@ let obj = {
   };
 //The getter works when obj.propName is read.
 //The setter works when obj.propName it is assigned.
+
+//Getter
+let user = {
+    name: "John",
+    surname: "Smith",
+  
+    get fullName() {
+      return `${this.name} ${this.surname}`;
+    }
+  };
+  
+  console.log(user.fullName); // John Smith
