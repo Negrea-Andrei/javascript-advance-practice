@@ -71,4 +71,33 @@ console.log(example.fullName); // John Smith
 
 for (let key in example) console.log(key); // name, surname
 //!Please note that a property can be either an accessor (has get/set methods) or a data property (has a value), not both.
+/*Object.defineProperty({}, 'prop', {
+  get() {
+    return 1
+  },
+
+  value: 2
+});*/ //!THIS WILL HAVE AN ERROR!!!!!!!!
+
+//!Smarter getters/setters
+//*Getters/setters can be used as wrappers over “real” property values to gain more control over operations with them.
+let user = {
+    get name() {
+        return this._name;
+        //So, the name is stored in _name property, and the access is done via getter and setter.
+    },
+
+    set name(value) {
+        if (value.length < 4) {
+            alert("Name is too short, need at least 4 characters");
+            return;
+        }
+        this._name = value;
+    }
+};
+
+user.name = "Pete";
+alert(user.name); // Pete
+
+user.name = ""; // Name is too short...
 
