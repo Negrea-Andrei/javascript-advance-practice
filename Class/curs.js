@@ -24,3 +24,12 @@ alert(typeof User); // function
 //!What class User {... } construct really does is:
 //*1)Creates a function named User, that becomes the result of the class declaration. The function code is taken from the constructor method(assumed empty if we don’t write such method).
 //*2)Stores class methods, such as sayHi, in User.prototype.
+
+//!Not just a syntactic sugar!!!
+//*1)First, a function created by class is labelled by a special internal property [[IsClassConstructor]]: true. So it’s not entirely the same as creating it manually.
+//*The language checks for that property in a variety of places.
+
+//*2)Class methods are non-enumerable. A class definition sets enumerable flag to false for all methods in the "prototype".
+//*That’s good, because if we for..in over an object, we usually don’t want its class methods.
+
+//*3)Classes always use strict. All code inside the class construct is automatically in strict mode.
