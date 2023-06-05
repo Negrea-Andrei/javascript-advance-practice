@@ -16,3 +16,7 @@ const person2=  {
 
 console.log(person.fullName())
 console.log(person2.fullName())
+
+//!A normal function can be called before it is declared but arrow can only be access after it was declared
+
+//!Arrow function have an implicit return (you don't have to put 'return' to return something)
