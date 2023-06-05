@@ -1,23 +1,13 @@
 //!Webpack
 //!webpack is the go-to tool across the web for bundling and compiling JavaScript code(bundling your modules)
 import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
 
-function component() {
-  const element = document.createElement('div');
+ function component() {
+   const element = document.createElement('div');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
- // Add the image to our existing div.
- const myIcon = new Image();
- myIcon.src = Icon;
+   return element;
+ }
 
- element.appendChild(myIcon);
-
-  return element;
-}
-
-document.body.appendChild(component());
+ document.body.appendChild(component());
