@@ -2,14 +2,15 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
- mode: 'development',
+  mode: 'development',
   entry: {
     index: './src/index.js',
     print: './src/print.js',
   },
+ devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-     title: 'Development',
+      title: 'Development',
     }),
   ],
   output: {
@@ -18,3 +19,5 @@ module.exports = {
     clean: true,
   },
 };
+//!In order to make it easier to track down errors and warnings, JavaScript offers source maps, which map your compiled code back to your original source code.
+//!If an error originates from b.js, the source map will tell you exactly that.
