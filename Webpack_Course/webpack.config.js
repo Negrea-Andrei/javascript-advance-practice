@@ -1,24 +1,27 @@
-{
-  "name": "webpack-demo",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-   "watch": "webpack --watch",
-    "build": "webpack"
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    print: './src/print.js',
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "html-webpack-plugin": "^4.5.0",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.2.0"
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
   },
-  "dependencies": {
-    "lodash": "^4.17.20"
-  }
-}
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Development',
+    }),
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+   publicPath: '/',
+  },
+};
 //!In order to make it easier to track down errors and warnings, JavaScript offers source maps, which map your compiled code back to your original source code.
 //!If an error originates from b.js, the source map will tell you exactly that.
