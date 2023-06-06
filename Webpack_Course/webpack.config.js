@@ -8,9 +8,9 @@ module.exports = {
     print: './src/print.js',
   },
   devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-  },
+ devServer: {
+   static: './dist',
+ },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development',
@@ -20,8 +20,10 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-   publicPath: '/',
   },
+ optimization: {
+   runtimeChunk: 'single',
+ },
 };
 //!In order to make it easier to track down errors and warnings, JavaScript offers source maps, which map your compiled code back to your original source code.
 //!If an error originates from b.js, the source map will tell you exactly that.
