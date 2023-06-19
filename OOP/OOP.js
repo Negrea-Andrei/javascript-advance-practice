@@ -6,3 +6,26 @@
 
 //*As you craft your objects, one of the most important things to remember is the Single Responsibility Principle which states that a class (or object or module… you get the point) should only have one responsibility. 
 //*This doesn’t mean that an object can only do one thing, but it does mean that everything an object does should be part of one responsibility.
+
+//?NOT THIS
+function isGameOver() {
+
+    // game over logic goes here!
+
+    if (gameOver) {
+        const gameOverDiv = document.createElement('div');
+        gameOverDiv.classList.add('game-over');
+        gameOverDiv.textContent = `${this.winner} won the game!`;
+        document.body.appendChild(gameOverDiv);
+    }
+}
+
+//?THIS!
+function isGameOver() {
+
+    // game over logic goes here!
+
+    if (gameOver) {
+        DOMStuff.gameOver(this.winner);
+    }
+}
