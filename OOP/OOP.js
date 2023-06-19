@@ -32,3 +32,5 @@ function isGameOver() {
 
 //!The Single Responsibility Principle is the first of a commonly found set of 5 design principles called the SOLID principles. 
 //!You will read more about these principles in the assignment articles below.
+
+//!Loosely Coupled Objects
