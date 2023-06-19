@@ -3,3 +3,6 @@
 //!In other words… these principles are not rules- they’re helpful guidelines.  
 
 //!Single Responsibility
+
+//*As you craft your objects, one of the most important things to remember is the Single Responsibility Principle which states that a class (or object or module… you get the point) should only have one responsibility. 
+//*This doesn’t mean that an object can only do one thing, but it does mean that everything an object does should be part of one responsibility.
