@@ -73,3 +73,6 @@ console.log(`Height: ${square.height}, Width: ${square.width}`); // Outputs 'Hei
 
 square.setHeight(5);
 console.log(`Height: ${square.height}, Width: ${square.width}`); // Outputs 'Height: 5, Width: 4' (wrong)
+
+//! Interface segregation
+//*The interface segregation principle states that an entity should never be forced to implement an interface that contains elements which it will never use.
