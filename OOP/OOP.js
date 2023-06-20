@@ -36,3 +36,5 @@ function isGameOver() {
 //!Loosely Coupled Objects
 //*You should take care, however, to make sure that your individual objects can stand alone as much as possible. 
 //*Tightly coupled objects are objects that rely so heavily on each other that removing or changing one will mean that you have to completely change another one - a real bummer.
+
+//!SOLID JavaScript: The Single Responsibility Principle
