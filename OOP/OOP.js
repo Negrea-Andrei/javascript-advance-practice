@@ -44,3 +44,32 @@ function isGameOver() {
 //?Controller – an object designed to make decisions and control a complex task.
 //?Coordinator – an object that doesn’t make many decisions but, in a rote or mechanical way, delegates work to other objects.
 //?Interfacer – an object that transforms information or requests between distinct parts of a system.
+
+//*Open/Close principle: The open-closed principle says that code should be open for extension, but closed for modification. 
+//*What this means is that if we want to add additional functionality, we should be able to do so simply by extending the original functionality, without the need to modify it.
+
+//*Liskov Substitution principle: The Liskov substitution principle states that any class should be substitutable for its parent class without unexpected consequences. 
+//*In others words, if the classes Cat and Dog extend the class Animal, then we would expect all of the functionality held within the Animal class to behave normally for a Cat and Dog object.
+
+//?Example:
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+
+    setHeight(newHeight) {
+        this.height = newHeight;
+    }
+}
+
+class Square extends Rectangle {}
+
+const rectangle = new Rectangle(4, 5);
+const square = new Square(4, 4);
+
+console.log(`Height: ${rectangle.height}, Width: ${rectangle.width}`); // Outputs 'Height: 4, Width: 5' (correct)
+console.log(`Height: ${square.height}, Width: ${square.width}`); // Outputs 'Height: 4, Width: 4' (correct)
+
+square.setHeight(5);
+console.log(`Height: ${square.height}, Width: ${square.width}`); // Outputs 'Height: 5, Width: 4' (wrong)
