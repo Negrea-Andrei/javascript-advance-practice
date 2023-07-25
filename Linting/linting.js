@@ -7,3 +7,5 @@ In some cases it can even help adjust things like indentation for you!*/
 //!The following articles explain in more detail the benefits of using a linter while you code.
 
 //Test
+
+//*Image slider
