@@ -24,3 +24,5 @@ Set up arrow buttons which activate those functions and play with cycling throug
 Add in some navigation dots at the bottom of the slides. Make a horizontal series of empty circles with CSS immediately below the slideshow. Each circle represents a slide, so whenever a new slide is activated, its corresponding circle gets filled in so you can tell where in the show you are. Make each circle link to that particular slide, so you can click on the circle and it will jump to that slide.
 Add a timeout which advances the slides every 5 seconds.
 Play around with your slideshow!*/
+
+//!Was working outside the city. Came home late.
