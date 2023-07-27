@@ -1,1 +1,2 @@
 //!JSON (JavaScript Object Notation) is a standardized format for structuring data. It is heavily based on the syntax for JavaScript objects.
+//!It is commonly used for transmitting data in web applications
