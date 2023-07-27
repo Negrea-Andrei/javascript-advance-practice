@@ -4,3 +4,6 @@
 //*Even though it closely resembles JavaScript object literal syntax, it can be used independently from JavaScript, and many programming environments feature the ability to read (parse) and generate JSON.
 
 //!JSON structure
+
+/*parse(): Accepts a JSON string as a parameter, and returns the corresponding JavaScript object.
+stringify(): Accepts an object as a parameter, and returns the equivalent JSON string.*/
