@@ -7,3 +7,6 @@
 
 /*parse(): Accepts a JSON string as a parameter, and returns the corresponding JavaScript object.
 stringify(): Accepts an object as a parameter, and returns the equivalent JSON string.*/
+
+//! Asynchronous Code
+
