@@ -17,3 +17,9 @@ stringify(): Accepts an object as a parameter, and returns the equivalent JSON s
 //?Promises
 
 //*a promise is an object that might produce a value at some point in the future.
+/*Example*/
+const getData = function() {
+    // go fetch data from some API...
+    // clean it up a bit and return it as an object:
+    return data
+  }
