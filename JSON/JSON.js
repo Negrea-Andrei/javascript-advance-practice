@@ -15,3 +15,5 @@ stringify(): Accepts an object as a parameter, and returns the equivalent JSON s
 //*A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
 //?Promises
+
+//*a promise is an object that might produce a value at some point in the future.
