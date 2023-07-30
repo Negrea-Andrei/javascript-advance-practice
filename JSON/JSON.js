@@ -86,3 +86,17 @@ new Promise(function(resolve, reject) {
 // first then:  10
 // second then:  20
 // last then:  40
+
+//!catch
+//*The catch callback is executed when the promise is rejected:
+new Promise(function(resolve, reject) {
+	// A mock async action using setTimeout
+	setTimeout(function() { reject('Done!'); }, 3000);
+})
+.then(function(e) { console.log('done', e); })
+.catch(function(e) { console.log('catch: ', e); });
+
+// From the console:
+// 'catch: Done!'
+
+//*reject(Error('Data could not be found'))
