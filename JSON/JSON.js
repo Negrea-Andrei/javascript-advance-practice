@@ -37,3 +37,6 @@ const myData1 = getData() // if this is refactored to return a Promise...
 myData.then(function(data){ // .then() tells it to wait until the promise is resolved
   const pieceOfData = data['whatever'] // and THEN run the function inside
 })
+
+//!Promises syntax
+/*new Promise(function(resolve, reject)*/
