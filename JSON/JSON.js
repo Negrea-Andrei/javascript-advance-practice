@@ -100,3 +100,13 @@ new Promise(function(resolve, reject) {
 // 'catch: Done!'
 
 //*reject(Error('Data could not be found'))
+
+//!finally
+//*The newly introduced finally callback is called regardless of success or failure:
+(new Promise((resolve, reject) => { reject("Nope"); }))
+    .then(() => { console.log("success") })
+    .catch(() => { console.log("fail") })
+    .finally(res => { console.log("finally") });
+
+// >> fail
+// >> finally
