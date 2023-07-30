@@ -110,3 +110,13 @@ new Promise(function(resolve, reject) {
 
 // >> fail
 // >> finally
+
+//!Promise.all
+//*The Promise.all method takes an array of promises and fires one callback once they are all resolved:
+
+Promise.all([promise1, promise2]).then(function(results) {
+	// Both promises resolved
+})
+.catch(function(error) {
+	// One or more promises was rejected
+});
