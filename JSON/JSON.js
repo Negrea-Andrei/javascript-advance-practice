@@ -39,4 +39,25 @@ myData.then(function(data){ // .then() tells it to wait until the promise is res
 })
 
 //!Promises syntax
-/*new Promise(function(resolve, reject)*/
+/*var p = new Promise(function(resolve, reject) {
+	
+	// Do an async task async task and then...
+
+	if( good condition ) {
+		resolve('Success!');
+	}
+	else {
+		reject('Failure!');
+	}
+});
+
+p.then(function(result) { 
+	 do something with the result
+}).catch(function() {
+	 error :(
+}).finally(function() {
+    executes regardless or success for failure
+});*/
+
+//!then
+//*All promise instances get a then method which allows you to react to the promise.  The first then method callback receives the result given to it by the resolve() call.
