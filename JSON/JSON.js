@@ -120,3 +120,22 @@ Promise.all([promise1, promise2]).then(function(results) {
 .catch(function(error) {
 	// One or more promises was rejected
 });
+
+//*Dealing with rejection is, of course, hard. If any promise is rejected the catch fires for the first rejection:
+
+var req1 = new Promise(function(resolve, reject) { 
+	// A mock async action using setTimeout
+	setTimeout(function() { resolve('First!'); }, 4000);
+});
+var req2 = new Promise(function(resolve, reject) { 
+	// A mock async action using setTimeout
+	setTimeout(function() { reject('Second!'); }, 3000);
+});
+Promise.all([req1, req2]).then(function(results) {
+	console.log('Then: ', results);
+}).catch(function(err) {
+	console.log('Catch: ', err);
+});
+
+// From the console:
+// Catch: Second!
