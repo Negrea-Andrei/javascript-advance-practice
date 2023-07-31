@@ -11,3 +11,5 @@ from the API service before attempting to fetch data from their endpoints.
 
  /*On one hand, issuing API keys allows an API service to better track abuse of their systems and data. On the other hand, 
  it can also be a way for those services to mitigate and recuperate operating costs.*/
+
+ //!Because your API key is your key to these services and data, securing them is an important habit, especially if you are using a paid tier.
