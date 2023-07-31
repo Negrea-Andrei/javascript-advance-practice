@@ -1,0 +1,1 @@
+//*Servers that are created for serving data for external use (in websites or apps) are often referred to as APIs or ‘Application Programming Interfaces’.
