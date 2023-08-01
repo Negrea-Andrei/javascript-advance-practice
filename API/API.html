@@ -11,9 +11,12 @@
     <img src="#">
     <script>
         const img = document.querySelector('img');
-        fetch('https://api.giphy.com/v1/gifs/translate?api_key=YOUR_KEY_HERE&s=cats', { mode: 'cors' })
+        fetch('https://api.giphy.com/v1/gifs/translate?api_key=bXhKU4z5tbTDzvBryftPFx4le1RQEUbj&s=cats', { mode: 'cors' })
             .then(function (response) {
-                console.log(response.json());
+                return response.json();
+            })
+            .then(function (response) {
+                img.src = response.data.images.original.url;
             });
     </script>
 </body>
