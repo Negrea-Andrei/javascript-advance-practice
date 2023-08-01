@@ -26,3 +26,5 @@ fetch('https://url.com/some/url')
   .catch(function(err) {
     // Error :(
   });
+
+//!CORS ==> read this! https://javascript.info/fetch-crossorigin
