@@ -13,3 +13,5 @@ from the API service before attempting to fetch data from their endpoints.
  it can also be a way for those services to mitigate and recuperate operating costs.*/
 
  //!Because your API key is your key to these services and data, securing them is an important habit, especially if you are using a paid tier.
+
+ //!Fetch
