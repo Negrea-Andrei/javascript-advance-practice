@@ -15,3 +15,14 @@ from the API service before attempting to fetch data from their endpoints.
  //!Because your API key is your key to these services and data, securing them is an important habit, especially if you are using a paid tier.
 
  //!Fetch
+
+ //*Web browsers have begun to implement a new native function for making HTTP requests, and that’s the one we’re going to use and stick with for now. Meet fetch:
+
+// URL (required), options (optional)
+fetch('https://url.com/some/url')
+  .then(function(response) {
+    // Successful response :)
+  })
+  .catch(function(err) {
+    // Error :(
+  });
