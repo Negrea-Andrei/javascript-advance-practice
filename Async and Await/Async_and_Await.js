@@ -25,3 +25,13 @@ asyncFunctionCall().catch(err => {
 
 //?But there is another way: the mighty try/catch block! If you want to handle the error directly inside the async function, 
 //?you can use try/catch just like you would inside synchronous code.
+
+async function getPersonsInfo(name) {
+    try {
+        const people = await server.getPeople();
+        const person = people.find(person => { return person.name === name });
+        return person;
+    } catch (error) {
+        // Handle the error any way you'd like
+    }
+}
