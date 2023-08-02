@@ -15,3 +15,13 @@ async function getPersonsInfo(name) {
 //*Then you can use the result in your code as you would in your synchronous code.
 
 //!ERRORS in async functions
+
+/*Handling errors in async functions is very easy. Promises have the .catch() method for handling rejected promises, 
+and since async functions just return a promise, you can simply call the function, and append a .catch() method to the end.*/
+
+asyncFunctionCall().catch(err => {
+    console.error(err)
+});
+
+//?But there is another way: the mighty try/catch block! If you want to handle the error directly inside the async function, 
+//?you can use try/catch just like you would inside synchronous code.
