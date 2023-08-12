@@ -12,3 +12,14 @@ function iterationFibonacci(n) {
 }
 
 console.log(iterationFibonacci(8))
+
+function recursiveFibonacci(n, number1 = 0, number2 = 1, arr = []) {
+    if (n === 0) {
+        return arr;
+    } else {
+        arr.push(number1);
+        return recursiveFibonacci(n - 1, number2, number1 + number2, arr);
+    }
+}
+
+console.log(recursiveFibonacci(8))
