@@ -37,4 +37,12 @@ function oddNumbersLessThanTen(maxNumber) {
   }
 }
 
-//* Then the number of steps will vary depending on the input
+//* Then the number of steps will vary depending on the input. In this case we cant measure the efficiency of the code
+
+//*So what we really want to be able to measure is how the number of steps of our algorithm changes when the data changes. 
+//*This helps us answer the question of whether the code we write will scale.
+//!This is where the Big O notation is used
+/*
+1) Big O Notation - represents the upper bound of an algorithm. This means the worst-case scenario for how the algorithm will perform.
+2) Omega Notation - represents the lower bound of an algorithm. This is the best-case scenario.
+3) Theta Notation - represents both the upper bound and lower bound and therefore analyses the average case complexity of an algorithm.*/
