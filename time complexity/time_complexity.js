@@ -22,3 +22,19 @@ function oddNumbersLessThanTen() {
 
 3) To exit the loop, we need to compare currentNumber one last time to see that it is not less than ten any more. That is one last step.*/
 /*27 + 5 + 1 +1 = 34*/
+
+//* If we change the function in this way
+
+function oddNumbersLessThanTen(maxNumber) {
+  let currentNumber = 1;
+
+  while (currentNumber < maxNumber) {
+    if (currentNumber % 2 !== 0) {
+      console.log(currentNumber);
+    }
+
+    currentNumber += 1;
+  }
+}
+
+//* Then the number of steps will vary depending on the input
