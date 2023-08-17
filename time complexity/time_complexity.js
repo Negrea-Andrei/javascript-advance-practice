@@ -46,3 +46,8 @@ function oddNumbersLessThanTen(maxNumber) {
 1) Big O Notation - represents the upper bound of an algorithm. This means the worst-case scenario for how the algorithm will perform.
 2) Omega Notation - represents the lower bound of an algorithm. This is the best-case scenario.
 3) Theta Notation - represents both the upper bound and lower bound and therefore analyses the average case complexity of an algorithm.*/
+
+//*Big O is not a piece of code you can put your algorithm into and it tells you how efficient it is. 
+//*You will need to measure how the number of steps changes as the data grows, and using this you can apply a Big O Notation to it and measure it against other algorithms. 
+//*In many cases you’ll be using a data structure in which the ways you interact with it are well known, 
+//*and in that case it’s easier to judge how it will scale as the input changes.
