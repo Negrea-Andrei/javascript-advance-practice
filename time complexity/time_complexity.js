@@ -51,3 +51,5 @@ function oddNumbersLessThanTen(maxNumber) {
 //*You will need to measure how the number of steps changes as the data grows, and using this you can apply a Big O Notation to it and measure it against other algorithms. 
 //*In many cases you’ll be using a data structure in which the ways you interact with it are well known, 
 //*and in that case it’s easier to judge how it will scale as the input changes.
+
+//?Read about the Big O values
