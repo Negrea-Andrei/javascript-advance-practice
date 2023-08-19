@@ -53,3 +53,12 @@ function oddNumbersLessThanTen(maxNumber) {
 //*and in that case it’s easier to judge how it will scale as the input changes.
 
 //?Read about the Big O values
+/*the values of Big O
+O(1) - Constant Complexity
+O(log N) - Logarithmic Complexity
+O(N) - Linear Complexity
+O(N log N) - N x log N Complexity
+O(n²) - Quadratic Complexity
+O(n³) - Cubic Complexity
+O(2ⁿ) - Exponential Complexity
+O(N!) - Factorial Complexity*/
