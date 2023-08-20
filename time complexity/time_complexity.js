@@ -62,3 +62,37 @@ O(n²) - Quadratic Complexity
 O(n³) - Cubic Complexity
 O(2ⁿ) - Exponential Complexity
 O(N!) - Factorial Complexity*/
+
+//*O(1) is constant time. meaning it takes the same amount of steps no matter the amount of data
+
+//*O(log N) is logarithmic time.
+/*Logarithmic Complexity tells us that the numbers of steps an algorithm takes increases by 1 as the data doubles. 
+That’s still pretty efficient when you think about it. 
+Going from 5,000 to 10,000 data elements and only taking one additional step can scale really well.*/
+
+//*O(N) - Linear complexity
+/*This one is pretty easy to wrap your head around. 
+Linear Complexity just tells us that as the number of items grows, the number of steps grows at exactly the same rate. 
+Every time you iterate over an array is an example of Linear Complexity.*/
+
+//*O(N log N) - N x log N complexity
+/*You can’t say this one isn’t appropriately named. 
+This notation usually implies we have an algorithm which initially is O(log N) such as our example earlier of 
+Binary Search where it repeatedly breaks an array in half, but with O(N log N) each of 
+those array halves is processed by another algorithm with a complexity of O(N).*/
+
+//*O(n²) - Quadratic complexity
+/*You’ve probably written code with a Quadratic Complexity on your programming journey. 
+It’s commonly seen when you loop over a data set and within each loop you loop over it again.*/
+
+//*O(n³) - Cubic complexity
+/*Think triple nested loops baby. If looping over an array with n items, 1 extra item adds an extra outer loop, 
+an extra middle loop, and an extra innermost loop. 
+When using such triply nested loops on an array of size n, we require a total of n³ sub-steps.*/
+
+//*O(2ⁿ) - Exponential complexity
+/*Exponential Complexity means that with each item added to the data size, the number of steps doubles from the previous number of steps.*/
+
+//*O(N!) - Factorial complexity
+/*A factorial is the product of the sequence of n integers. 
+The factorial of 4(4!) is 4 * 3 * 2 * 1.*/
