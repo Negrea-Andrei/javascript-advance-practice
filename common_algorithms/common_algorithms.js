@@ -41,3 +41,56 @@ that follow the Last In, First Out (LIFO) principle. Queues have two main operat
 A tree consists of nodes connected by edges, with one node being the root and all other nodes forming subtrees. 
 Trees are widely used in various algorithms and data storage scenarios. Binary trees (particularly heaps), 
 AVL trees, and B-trees are some popular types of trees. They enable efficient searching, sorting, and hierarchical representation of data.*/
+
+//?EXAMPLE
+// Define the Node class that represents a single element in the linked list
+class Node {
+    constructor(data) {
+      this.data = data; // Store the data of the node
+      this.next = null; // Reference to the next node (initialized to null)
+    }
+  }
+  
+  // Define the LinkedList class that manages the linked list
+  class LinkedList {
+    constructor() {
+      this.head = null; // Initialize the head of the list to null (empty list)
+    }
+  
+    // Method to append a new node with given data to the end of the linked list
+    append(data) {
+      const newNode = new Node(data); // Create a new node with the given data
+  
+      if (!this.head) {
+        // If the list is empty, make the new node the head of the list
+        this.head = newNode;
+        return;
+      }
+  
+      let current = this.head; // Start from the head of the list
+      while (current.next) {
+        current = current.next; // Traverse to the last node in the list
+      }
+      current.next = newNode; // Set the new node as the next node of the last node
+    }
+  
+    // Method to display the data of all nodes in the linked list
+    display() {
+      let current = this.head; // Start from the head of the list
+      while (current) {
+        console.log(current.data); // Print the data of the current node
+        current = current.next;    // Move to the next node
+      }
+    }
+  }
+  
+  // Create a new instance of the LinkedList class
+  const myList = new LinkedList();
+  
+  // Append nodes with data 10, 20, and 30 to the linked list
+  myList.append(10);
+  myList.append(20);
+  myList.append(30);
+  
+  // Display the data of all nodes in the linked list
+  myList.display();
