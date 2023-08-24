@@ -98,3 +98,16 @@ class Node {
   //!Algorithms
   /*Instead, the word algorithm is used to describe the “step-by-step” approach where there is exactly one correct next step. 
   In an algorithm, given the current phase of the process and the steps that are outlined, there is one single, correct way to proceed.*/
+
+  /*1) Linear Search Algorithm:
+  The simplest way to find his number would be to look through every single entry and compare it to the name you’re looking for (go trough etch element and check if is ok or not)*/
+
+  /*2) Chunking Search Algorithm:
+  The process of chunking involves first finding the general area where an entry would be, then proceeding to check every entry. 
+  (basically go to an area where the data might be an start checking form there)*/
+
+  /*3) Binary Search Algorithm:
+  The most efficient way to find a person in the phone book is to metaphorically split the phone book in half, 
+  determine which half of the phone book the entry is in, quickly removing the entire other half from the equation.
+  (given a data structure, whe start splitting the data and checking for comparisons. If the data is bigger, we go right,
+    if its smaller we go left)*/
