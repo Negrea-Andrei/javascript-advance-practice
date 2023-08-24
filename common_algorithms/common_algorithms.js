@@ -8,7 +8,7 @@ Usually, efficient data structures are key to designing efficient algorithms.
 Some formal design methods and programming languages emphasize data structures, rather than algorithms, as the key organizing factor in software design. 
 Data structures can be used to organize the storage and retrieval of information stored in both main memory and secondary memory*/
 
-//*Example of algorithms:
+//*Example of data structures:
 /*
 1)Array is a number of elements in a specific order, typically all of the same type 
 (depending on the language, individual elements may either all be forced to be the same type, or may be of almost any type). 
