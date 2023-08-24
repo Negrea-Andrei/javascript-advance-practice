@@ -96,3 +96,5 @@ class Node {
   myList.display();
 
   //!Algorithms
+  /*Instead, the word algorithm is used to describe the “step-by-step” approach where there is exactly one correct next step. 
+  In an algorithm, given the current phase of the process and the steps that are outlined, there is one single, correct way to proceed.*/
