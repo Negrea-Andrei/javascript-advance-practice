@@ -45,69 +45,69 @@ AVL trees, and B-trees are some popular types of trees. They enable efficient se
 //?EXAMPLE
 // Define the Node class that represents a single element in the linked list
 class Node {
-    constructor(data) {
-      this.data = data; // Store the data of the node
-      this.next = null; // Reference to the next node (initialized to null)
+  constructor(data) {
+    this.data = data; // Store the data of the node
+    this.next = null; // Reference to the next node (initialized to null)
+  }
+}
+
+// Define the LinkedList class that manages the linked list
+class LinkedList {
+  constructor() {
+    this.head = null; // Initialize the head of the list to null (empty list)
+  }
+
+  // Method to append a new node with given data to the end of the linked list
+  append(data) {
+    const newNode = new Node(data); // Create a new node with the given data
+
+    if (!this.head) {
+      // If the list is empty, make the new node the head of the list
+      this.head = newNode;
+      return;
+    }
+
+    let current = this.head; // Start from the head of the list
+    while (current.next) {
+      current = current.next; // Traverse to the last node in the list
+    }
+    current.next = newNode; // Set the new node as the next node of the last node
+  }
+
+  // Method to display the data of all nodes in the linked list
+  display() {
+    let current = this.head; // Start from the head of the list
+    while (current) {
+      console.log(current.data); // Print the data of the current node
+      current = current.next;    // Move to the next node
     }
   }
-  
-  // Define the LinkedList class that manages the linked list
-  class LinkedList {
-    constructor() {
-      this.head = null; // Initialize the head of the list to null (empty list)
-    }
-  
-    // Method to append a new node with given data to the end of the linked list
-    append(data) {
-      const newNode = new Node(data); // Create a new node with the given data
-  
-      if (!this.head) {
-        // If the list is empty, make the new node the head of the list
-        this.head = newNode;
-        return;
-      }
-  
-      let current = this.head; // Start from the head of the list
-      while (current.next) {
-        current = current.next; // Traverse to the last node in the list
-      }
-      current.next = newNode; // Set the new node as the next node of the last node
-    }
-  
-    // Method to display the data of all nodes in the linked list
-    display() {
-      let current = this.head; // Start from the head of the list
-      while (current) {
-        console.log(current.data); // Print the data of the current node
-        current = current.next;    // Move to the next node
-      }
-    }
-  }
-  
-  // Create a new instance of the LinkedList class
-  const myList = new LinkedList();
-  
-  // Append nodes with data 10, 20, and 30 to the linked list
-  myList.append(10);
-  myList.append(20);
-  myList.append(30);
-  
-  // Display the data of all nodes in the linked list
-  myList.display();
+}
+
+// Create a new instance of the LinkedList class
+const myList = new LinkedList();
+
+// Append nodes with data 10, 20, and 30 to the linked list
+myList.append(10);
+myList.append(20);
+myList.append(30);
+
+// Display the data of all nodes in the linked list
+myList.display();
 
   //!Algorithms
-  /*Instead, the word algorithm is used to describe the “step-by-step” approach where there is exactly one correct next step. 
-  In an algorithm, given the current phase of the process and the steps that are outlined, there is one single, correct way to proceed.*/
+/*Instead, the word algorithm is used to describe the “step-by-step” approach where there is exactly one correct next step.
+In an algorithm, given the current phase of the process and the steps that are outlined, there is one single, correct way to proceed.*/
 
-  /*1) Linear Search Algorithm:
-  The simplest way to find his number would be to look through every single entry and compare it to the name you’re looking for (go trough etch element and check if is ok or not)*/
+/*1) Linear Search Algorithm:
+The simplest way to find his number would be to look through every single entry and compare it to the name you’re looking for (go trough etch element and check if is ok or not)*/
 
-  /*2) Chunking Search Algorithm:
-  The process of chunking involves first finding the general area where an entry would be, then proceeding to check every entry. 
-  (basically go to an area where the data might be an start checking form there)*/
+/*2) Chunking Search Algorithm:
+The process of chunking involves first finding the general area where an entry would be, then proceeding to check every entry. 
+(basically go to an area where the data might be an start checking form there)*/
 
-  /*3) Binary Search Algorithm:
-  The most efficient way to find a person in the phone book is to metaphorically split the phone book in half, 
-  determine which half of the phone book the entry is in, quickly removing the entire other half from the equation.
-  (given a data structure, whe start splitting the data and checking for comparisons. If the data is bigger, we go right,
-    if its smaller we go left)*/
+/*3) Binary Search Algorithm:
+The most efficient way to find a person in the phone book is to metaphorically split the phone book in half, 
+determine which half of the phone book the entry is in, quickly removing the entire other half from the equation.
+(given a data structure, whe start splitting the data and checking for comparisons. If the data is bigger, we go right,
+  if its smaller we go left)*/
