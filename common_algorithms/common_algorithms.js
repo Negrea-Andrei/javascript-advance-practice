@@ -94,3 +94,5 @@ class Node {
   
   // Display the data of all nodes in the linked list
   myList.display();
+
+  //!Algorithms
