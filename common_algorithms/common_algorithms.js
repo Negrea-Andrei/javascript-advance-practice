@@ -111,3 +111,5 @@ The most efficient way to find a person in the phone book is to metaphorically s
 determine which half of the phone book the entry is in, quickly removing the entire other half from the equation.
 (given a data structure, whe start splitting the data and checking for comparisons. If the data is bigger, we go right,
   if its smaller we go left)*/
+
+  //*Binary tree traversal
