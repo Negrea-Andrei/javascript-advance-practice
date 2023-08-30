@@ -19,3 +19,5 @@
 
 //?to revert a commit:
 //!git revert
+
+//*Read Jest documentation
