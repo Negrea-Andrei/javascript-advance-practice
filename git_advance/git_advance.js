@@ -21,3 +21,4 @@
 //!git revert
 
 //*Read Jest documentation
+//*Revisit the QA course
