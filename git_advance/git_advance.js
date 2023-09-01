@@ -22,3 +22,4 @@
 
 //*Read Jest documentation
 //*Revisit the QA course
+//*Mocking basics for testing
