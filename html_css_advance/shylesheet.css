@@ -4,7 +4,7 @@ html {
     padding: 0;    
 }
 
-.A, .B {
+.A, .B, .C {
     height: 100px;
     width: 100px;
     background-color: aqua;
@@ -12,5 +12,16 @@ html {
 }
 
 .B:hover {
-    transform: rotateX(180deg);
+    transform: rotateX(180deg) translateX(75%) skewX(50deg) scale(2);
+    transition: transform ease-in 1000ms;
+}
+
+.A:hover {
+    transform: rotateY(180deg) translateY(-33%) skewY(33deg) scale(-1);
+    transition: transform ease-in 1000ms;
+}
+
+.C:hover {
+    transform: rotateZ(90deg) translate(75%) skew(-10deg) scale(0.5);
+    transition: transform ease-in 1000ms;
 }
