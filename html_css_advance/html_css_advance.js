@@ -33,3 +33,16 @@ an animation will start running immediately if that’s what you told it to do.*
 /*Transitions are not as flexible as using animations. When you define a transition, imagine you are sending that element on a journey 
 in a straight line from point A to point B. Yes, the transition-timing-function can add some variation to the timing of this change, 
 but it doesn’t compare to the amount of flexibility added by using animations.*/
+
+//?animation-duration how long until a cycle of the animation is completed
+//?animation-name the name of the animation
+//?animation-iteration-count how many times the animations must be played
+//?animation-direction how it will react when reaching the end of the animation
+
+//!Keyframes
+
+/*The @keyframes at-rule references the ‘change-color’ name we defined earlier. Then, we use the from and to properties to change the 
+background-color of #ball from red to green.
+
+It’s important to know that keyframes use a percentage to indicate the times for an animation to take place and 
+that the from and to statements are actually aliases for 0% and 100%, respectively. You can read from/0% as meaning ‘at zero seconds’ and to/100%*/

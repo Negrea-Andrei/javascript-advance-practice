@@ -22,17 +22,17 @@ html {
 
     25% {
         background-color: yellow;
-        height: 150px;
+        height: 100px;
     }
 
     50% {
         background-color: green;
-        height: 75px
+        height: 100px
     }
 
     75% {
         background-color: purple !important;
-        height: 50px
+        height: 100px
     }
 
     to {
@@ -40,7 +40,7 @@ html {
         rgb(255, 0, 255),
         green,
         rgb(238, 255, 0)) ;
-        height: 110px
+        height: 100px
     }
 }
 
