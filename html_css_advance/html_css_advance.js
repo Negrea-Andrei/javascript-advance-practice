@@ -12,3 +12,10 @@
 //!Transition
 
 //*CSS transitions let you animate a change from an element’s initial state to an end state.
+
+//?transition-property: the target of the transition
+//?transition-duration: how long will the transition last
+//?transition-timing-function: how it will be done
+//?transition-delay: how long until the transition start
+
+//*instead of all of this you could use just "transition"
