@@ -6,3 +6,9 @@
 //?scale
 //?skew
 //?translate
+
+//*The key benefit of using transform is that it occurs during composition. This makes it cheaper to use compared to many other CSS properties
+
+//!Transition
+
+//*CSS transitions let you animate a change from an element’s initial state to an end state.
