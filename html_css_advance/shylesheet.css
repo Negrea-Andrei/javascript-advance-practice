@@ -1,14 +1,47 @@
 body,
 html {
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    animation: 4s change-color infinite alternate
 }
 
-.A, .B, .C {
+.A,
+.B,
+.C {
     height: 100px;
     width: 100px;
     background-color: aqua;
     margin: 50px;
+    animation: 2s change-color infinite alternate-reverse;
+}
+
+@keyframes change-color {
+    from {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+        height: 150px;
+    }
+
+    50% {
+        background-color: green;
+        height: 75px
+    }
+
+    75% {
+        background-color: purple !important;
+        height: 50px
+    }
+
+    to {
+        background: linear-gradient( 30deg,
+        rgb(255, 0, 255),
+        green,
+        rgb(238, 255, 0)) ;
+        height: 110px
+    }
 }
 
 .B:hover {
@@ -24,7 +57,7 @@ html {
 .C:hover {
     transform: rotateZ(90deg) translate(75%) skew(-10deg) scale(0.5);
     transition: transform ease-in 1000ms;
-    
+
 }
 
 .D {
