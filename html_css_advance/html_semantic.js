@@ -11,3 +11,6 @@
 <main>
 <nav>
 <section></section> */
+
+//!Keyboard navigation
+/*More details in the notes*/
