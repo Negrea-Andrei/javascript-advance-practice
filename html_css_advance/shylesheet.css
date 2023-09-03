@@ -5,6 +5,12 @@ html {
     animation: 4s change-color infinite alternate
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .A,
 .B,
 .C {
@@ -12,7 +18,7 @@ html {
     width: 100px;
     background-color: aqua;
     margin: 50px;
-    animation: 2s change-color infinite alternate-reverse;
+    animation: 2s change-color infinite alternate;
 }
 
 @keyframes change-color {
@@ -31,15 +37,12 @@ html {
     }
 
     75% {
-        background-color: purple !important;
+        background-color: purple ;
         height: 100px
     }
 
     to {
-        background: linear-gradient( 30deg,
-        rgb(255, 0, 255),
-        green,
-        rgb(238, 255, 0)) ;
+        background: rgb(255, 0, 255) ;
         height: 100px
     }
 }
