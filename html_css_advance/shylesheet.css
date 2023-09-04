@@ -27,6 +27,7 @@ header {
     background-image: url(./Profile1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 300px
 }
 
 @keyframes change-color {
