@@ -21,6 +21,14 @@ header {
     animation: 2s change-color infinite alternate;
 }
 
+.test {
+    height: 500px;
+    width: 500px;
+    background-image: url(./Profile1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @keyframes change-color {
     from {
         background-color: red;
