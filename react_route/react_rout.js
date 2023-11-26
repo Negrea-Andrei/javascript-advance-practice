@@ -25,3 +25,4 @@ to be used instead of the regular a tag. We can replace the a tag in our navbar 
 
 /*children: [
       { index: true, element: <DefaultProfile /> },*/
+//!If you visit the /profile path now, you should be able to see some default content where the Outlet is rendered when the index path is rendered!
