@@ -1,4 +1,6 @@
-export default function App() {
+import { Link } from "react-router-dom";
+
+const Test = () => {
   return (
     <div>
       <h1>Hello from the main page of the app!</h1>
@@ -6,10 +8,12 @@ export default function App() {
       <nav>
         <ul>
           <li>
-            <a href="profile">Profile page</a>
+            <Link to="profile">Profile page</Link>
           </li>
         </ul>
       </nav>
     </div>
   );
-}
+};
+
+export default Test;

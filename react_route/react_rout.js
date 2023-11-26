@@ -7,6 +7,12 @@ the URL changes and the view of the page is modified accordingly, within the cli
 //!Got home late from DevCom
 
 //*React Router
-/*Is a standard routing library for React applications. By using React Router, 
-we can specify React components, that can be rendered based on the route, 
+/*Is a standard routing library for React applications. By using React Router,
+we can specify React components, that can be rendered based on the route,
 and so much more. Let’s dive in!*/
+
+//*Link
+/*But you may notice, when we click the links in the navbar, 
+the browser is reloading for the next URL instead of using React Router. 
+This isn’t what was promised! To help with this, React Router exports a custom Link element 
+to be used instead of the regular a tag. We can replace the a tag in our navbar with the Link element.*/
