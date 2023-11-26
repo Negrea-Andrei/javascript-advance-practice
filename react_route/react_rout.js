@@ -19,3 +19,9 @@ to be used instead of the regular a tag. We can replace the a tag in our navbar 
 
 //*Nested routes
 /*We can add routes nested as the children of one another to ensure that the child gets rendered alongside the parent.*/
+
+//?Default routes
+/*If you want to render something as a default component when no path is added to Profile, you can add an index route to the children!*/
+
+/*children: [
+      { index: true, element: <DefaultProfile /> },*/
