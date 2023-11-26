@@ -16,3 +16,6 @@ and so much more. Let’s dive in!*/
 the browser is reloading for the next URL instead of using React Router. 
 This isn’t what was promised! To help with this, React Router exports a custom Link element 
 to be used instead of the regular a tag. We can replace the a tag in our navbar with the Link element.*/
+
+//*Nested routes
+/*We can add routes nested as the children of one another to ensure that the child gets rendered alongside the parent.*/
