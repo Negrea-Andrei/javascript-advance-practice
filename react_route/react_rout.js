@@ -40,3 +40,5 @@ You can pass in an errorElement argument here!*/
 //*By refactoring, we can add whatever conditional logic we want, if it exists as a hook 
 //*(remember, we can’t use hooks outside of a React component!). 
 //*It’s much neater to have them separate even if you are not conditionally rendering routes.
+
+//!Use <Navigate /> to reroute if a condition is not meat
