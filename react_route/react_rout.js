@@ -36,3 +36,7 @@ Thankfully, you can do so with dynamic segments!*/
 Actually, the /profile path doesn’t make much sense without an actual name, else whose profile is it supposed to show, right? 
 So, the application shows an error! This can’t be good, so how do you show a default page in case the user visits a wrong or unused path? 
 You can pass in an errorElement argument here!*/
+
+//*By refactoring, we can add whatever conditional logic we want, if it exists as a hook 
+//*(remember, we can’t use hooks outside of a React component!). 
+//*It’s much neater to have them separate even if you are not conditionally rendering routes.
