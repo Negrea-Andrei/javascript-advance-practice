@@ -26,3 +26,13 @@ to be used instead of the regular a tag. We can replace the a tag in our navbar 
 /*children: [
       { index: true, element: <DefaultProfile /> },*/
 //!If you visit the /profile path now, you should be able to see some default content where the Outlet is rendered when the index path is rendered!
+
+/*But this example brings another dilemma. Sometimes, we want to render content according to the URLs. 
+That, here, would mean that we should be able to render content dynamically, from the component itself. 
+Thankfully, you can do so with dynamic segments!*/
+
+//!Handling bad urls
+/*But alas, the index path doesn’t work with this anymore, as in the /profile path, no params are actually passed. 
+Actually, the /profile path doesn’t make much sense without an actual name, else whose profile is it supposed to show, right? 
+So, the application shows an error! This can’t be good, so how do you show a default page in case the user visits a wrong or unused path? 
+You can pass in an errorElement argument here!*/
