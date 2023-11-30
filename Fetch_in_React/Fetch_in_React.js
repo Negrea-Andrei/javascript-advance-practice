@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 
 const Image = () => {
     const [imageURL, setImageURL] = useState(null);
+    /*need to add a state for the error */
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/photos", { mode: "cors" })
