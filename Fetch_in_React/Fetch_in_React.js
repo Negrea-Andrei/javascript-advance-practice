@@ -39,3 +39,4 @@ const Image = () => {
 export default Image;
 
 //*My birthday was today. Took a break. Will resume tomorrow.
+//*Check loading rendering
