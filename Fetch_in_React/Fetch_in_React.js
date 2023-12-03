@@ -40,3 +40,10 @@ export default Image;
 
 //*My birthday was today. Took a break. Will resume tomorrow.
 //*Check loading rendering
+
+/*Add a state for loading const [loading, setLoading] = useState(true)
+At the end of the async code add .finally(() => setLoading(false))
+Add condition if(error) return <p>Error</p>
+              if(loading) return <p>Loading</p>*/
+
+//*Custom hooks
