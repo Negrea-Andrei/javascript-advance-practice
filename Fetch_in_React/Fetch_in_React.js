@@ -84,5 +84,3 @@ const Images = () => {
     </>
   );
 };
-
-/*Apply for jobs*/
